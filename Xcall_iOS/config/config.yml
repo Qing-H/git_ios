@@ -1,0 +1,38 @@
+#读取格式如下：
+#from utils.config import Config
+#phone_num_a = Config().get('phone_num_a')
+#password_a = Config().get('password_a')
+#msg_1 = Config().get('msg_1')
+#friends_name_2 = Config().get('friends_name_2') ..
+#ios文本输入，需点击两次发送键
+
+path:
+
+url_a: http://localhost:4763/wd/hub
+url_b: http://localhost:4773/wd/hub
+
+phone_num_a: 15951903161
+password_a: 123456
+phone_num_b: 15951903162
+password_b: 123456
+port_a: 4763
+port_b: 4773
+
+# 整体通话超时时间设置
+time_out_small: 5
+time_out_mid: 15
+time_out_large: 20
+time_out_xlarge: 30
+time_out_sys_max: 65
+
+time_interval: 0.001
+time_interval_times: 500 #time_out_small / time_interval
+#time_interval_times_mid: time_out_mid/time_interval
+#time_interval_times_large: time_out_large/time_interval
+#time_interval_times_xlarge: time_out_xlarge/time_interval
+#time_interval_times_sys: time_out_sys_max/time_interval
+
+# 系统自动挂断时间
+time_out_sys_hangup: 32
+time_out_sys_max: 65
+
